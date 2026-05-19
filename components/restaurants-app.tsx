@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { MOODS, type Mood, type Restaurant } from "@/lib/restaurant-schema";
 
@@ -21,6 +21,7 @@ export function RestaurantsApp({
   center,
   formUrl,
 }: RestaurantsAppProps) {
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const [selectedMood, setSelectedMood] = useState<string>("all");
   const [selectedBudget, setSelectedBudget] = useState<string>("all");
   const [selectedId, setSelectedId] = useState<string | null>(
@@ -52,6 +53,11 @@ export function RestaurantsApp({
   const handleSelect = (id: string) => {
     setSelectedId(id);
   };
+
+  useEffect(() => {
+    if (!selectedRestaurant) return;
+    closeButtonRef.current?.focus();
+  }, [selectedRestaurant]);
 
   return (
     <div className="page-root">
@@ -145,6 +151,7 @@ export function RestaurantsApp({
           aria-label={`${selectedRestaurant.name} の詳細`}
         >
           <button
+            ref={closeButtonRef}
             type="button"
             className="modal-close"
             onClick={() => setSelectedId(null)}

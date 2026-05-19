@@ -16,6 +16,7 @@ type RestaurantsCache = {
 };
 
 const CACHE_TTL_MS = 5 * 60 * 1000;
+const APPROVED_VALUE = "TRUE";
 const cache: RestaurantsCache = {
   cacheExpiresAt: 0,
   data: [],
@@ -85,7 +86,7 @@ const loadSheetRestaurants = async (csvUrl: string): Promise<Restaurant[]> => {
   });
 
   return parsed.data
-    .filter((row) => String(row.approved).toUpperCase() === "TRUE")
+    .filter((row) => String(row.approved).toUpperCase() === APPROVED_VALUE)
     .map((row, index) => normalizeRestaurant(row, "sheet", index))
     .filter((row): row is Restaurant => row !== null);
 };
