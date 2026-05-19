@@ -18,11 +18,14 @@
    npm run dev
 
 環境変数
-- NEXT_PUBLIC_GOOGLE_FORM_URL (任意) — 投稿ボタンがリンクする Google Form。
-- GOOGLE_SHEET_CSV_URL (任意) — Google Sheet を "ファイル > ウェブに公開 > CSV" にした URL。設定すると /api/restaurants が自動で取得して表示します。
+- `NEXT_PUBLIC_GOOGLE_FORM_URL` (任意) — 投稿ボタンがリンクする Google Form。未設定時は `https://forms.gle/hELpM4ZsWbsfdEdU7` を使います。
+- `GOOGLE_SHEET_CSV_URL` (任意) — Google Sheet を "ファイル > ウェブに公開 > CSV" にした URL。設定すると /api/restaurants が自動で取得して表示します。
 
-デプロイ
-- Vercel と接続してデプロイしてください（推奨）。
+Vercel デプロイ
+1. Vercel で `netglix/netglix-wase-meshi-map` を Import する
+2. Environment Variables に `NEXT_PUBLIC_GOOGLE_FORM_URL` と `GOOGLE_SHEET_CSV_URL` を設定する
+3. `main` を本番デプロイ対象にして Deploy する
+4. レビュアーはデプロイ後の URL で「地図表示」「絞り込み」「投稿フォーム遷移」を確認する
 
 Google Form → Sheet → CSV の運用
 1. Google Form を作る（項目: name,budget,open_hours,photo_url,comment,mood,lat,lng,approved）
