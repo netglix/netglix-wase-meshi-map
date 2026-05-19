@@ -137,8 +137,18 @@ export function RestaurantsApp({
       </main>
 
       {selectedRestaurant && (
-        <dialog open className="details-modal">
-          <button className="modal-close" onClick={() => setSelectedId(null)}>
+        <dialog
+          open
+          className="details-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${selectedRestaurant.name} の詳細`}
+        >
+          <button
+            type="button"
+            className="modal-close"
+            onClick={() => setSelectedId(null)}
+          >
             閉じる
           </button>
           <img

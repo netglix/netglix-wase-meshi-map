@@ -11,13 +11,13 @@ import {
 } from "./restaurant-schema";
 
 type RestaurantsCache = {
-  expiresAt: number;
+  cacheExpiresAt: number;
   data: Restaurant[];
 };
 
 const CACHE_TTL_MS = 5 * 60 * 1000;
 const cache: RestaurantsCache = {
-  expiresAt: 0,
+  cacheExpiresAt: 0,
   data: [],
 };
 
@@ -92,7 +92,7 @@ const loadSheetRestaurants = async (csvUrl: string): Promise<Restaurant[]> => {
 
 export const getRestaurants = async (): Promise<Restaurant[]> => {
   const now = Date.now();
-  if (cache.expiresAt > now) {
+  if (cache.cacheExpiresAt > now) {
     return cache.data;
   }
 
@@ -110,7 +110,7 @@ export const getRestaurants = async (): Promise<Restaurant[]> => {
     }
   }
 
-  cache.expiresAt = now + CACHE_TTL_MS;
+  cache.cacheExpiresAt = now + CACHE_TTL_MS;
   cache.data = restaurants;
 
   return restaurants;
