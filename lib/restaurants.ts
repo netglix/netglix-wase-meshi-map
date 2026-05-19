@@ -74,7 +74,7 @@ const loadSeedRestaurants = async (): Promise<Restaurant[]> => {
 };
 
 const loadSheetRestaurants = async (csvUrl: string): Promise<Restaurant[]> => {
-  const response = await fetch(csvUrl, { next: { revalidate: 300 } });
+  const response = await fetch(csvUrl);
   if (!response.ok) {
     throw new Error(`Failed to fetch sheet CSV: ${response.status}`);
   }
