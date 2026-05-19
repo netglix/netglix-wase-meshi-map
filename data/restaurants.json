@@ -1,0 +1,46 @@
+[
+  {
+    "id": "wase01",
+    "name": "武道家 早稲田店",
+    "lat": 35.7074,
+    "lng": 139.7211,
+    "budget": "~¥1,000",
+    "mood": "男ともだちとがっつり",
+    "hours": "11:00-23:00",
+    "photo": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=800&q=80",
+    "comment": "濃いめ家系で授業終わりに最高"
+  },
+  {
+    "id": "wase02",
+    "name": "メルシー",
+    "lat": 35.7092,
+    "lng": 139.7215,
+    "budget": "~¥1,200",
+    "mood": "あっさり",
+    "hours": "11:00-20:00",
+    "photo": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80",
+    "comment": "学生街の定番。オムライスが優しい"
+  },
+  {
+    "id": "wase03",
+    "name": "ラ・ボエム 早稲田",
+    "lat": 35.7058,
+    "lng": 139.7196,
+    "budget": "~¥2,500",
+    "mood": "デート",
+    "hours": "11:30-22:00",
+    "photo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    "comment": "落ち着いた雰囲気で夜ごはんに"
+  },
+  {
+    "id": "wase04",
+    "name": "串焼き えん",
+    "lat": 35.7067,
+    "lng": 139.7226,
+    "budget": "~¥800",
+    "mood": "ちょっとだけ",
+    "hours": "17:00-24:00",
+    "photo": "https://images.unsplash.com/photo-1514516345957-556ca7f68fdf?auto=format&fit=crop&w=800&q=80",
+    "comment": "一杯だけ寄れるコスパ系"
+  }
+]
