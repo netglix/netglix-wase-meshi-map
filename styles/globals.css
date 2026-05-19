@@ -1,0 +1,135 @@
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f5f6f8;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #4b5563;
+}
+
+.postLink {
+  background: #111827;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.filters select {
+  min-width: 180px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 8px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  min-height: calc(100vh - 210px);
+}
+
+.mapPane {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 520px;
+  border: 1px solid #e5e7eb;
+}
+
+.listPane {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: auto;
+}
+
+.listPane h2 {
+  margin-top: 0;
+}
+
+.listPane ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.restaurantButton {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.restaurantButton.active {
+  border-color: #111827;
+  background: #f9fafb;
+}
+
+.restaurantButton small {
+  color: #4b5563;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .mapPane {
+    min-height: 420px;
+  }
+}
