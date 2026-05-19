@@ -1,0 +1,42 @@
+[
+  {
+    "name": "武道家 早稲田店",
+    "budget": "¥900-¥1,200",
+    "open_hours": "11:00-23:00",
+    "photo_url": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=1200&q=80",
+    "comment": "濃いめ家系でがっつり食べたい日に。",
+    "mood": "男ともだちとがっつり",
+    "lat": 35.70848,
+    "lng": 139.72167
+  },
+  {
+    "name": "GOOD MORNING CAFE 早稲田",
+    "budget": "¥1,000-¥2,000",
+    "open_hours": "11:00-22:00",
+    "photo_url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80",
+    "comment": "ゆったり会話したいデート向きのカフェ。",
+    "mood": "デート",
+    "lat": 35.70544,
+    "lng": 139.72055
+  },
+  {
+    "name": "油そば専門店 GACHI 西早稲田",
+    "budget": "¥800-¥1,100",
+    "open_hours": "11:30-22:30",
+    "photo_url": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=1200&q=80",
+    "comment": "短時間でさっと食べられる定番。",
+    "mood": "ちょっとだけ",
+    "lat": 35.70692,
+    "lng": 139.70774
+  },
+  {
+    "name": "成蔵 高田馬場",
+    "budget": "¥1,500-¥2,200",
+    "open_hours": "11:00-20:00",
+    "photo_url": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=80",
+    "comment": "軽めの定食でも満足度が高い。",
+    "mood": "あっさり",
+    "lat": 35.71158,
+    "lng": 139.7042
+  }
+]
