@@ -1,0 +1,24 @@
+[
+  {
+    "name": "らーめんサンプル",
+    "budget": "〜1000円",
+    "open_hours": "11:00-22:00",
+    "photo_url": "https://images.unsplash.com/photo-1604908177522-6a3a3c1b7f3f?w=800&q=80",
+    "comment": "背脂系がおすすめ",
+    "mood": "あっさり",
+    "lat": 35.7125,
+    "lng": 139.7181,
+    "approved": true
+  },
+  {
+    "name": "カフェサンプル",
+    "budget": "〜1500円",
+    "open_hours": "9:00-20:00",
+    "photo_url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+    "comment": "ゆったりできるカフェ",
+    "mood": "ちょっとだけ",
+    "lat": 35.7138,
+    "lng": 139.7197,
+    "approved": true
+  }
+]
