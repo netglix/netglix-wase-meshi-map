@@ -143,8 +143,7 @@ export function RestaurantsApp({
       </main>
 
       {selectedRestaurant && (
-        <dialog
-          open
+        <div
           className="details-modal"
           role="dialog"
           aria-modal="true"
@@ -171,7 +170,7 @@ export function RestaurantsApp({
             地図座標: {selectedRestaurant.lat.toFixed(5)},{" "}
             {selectedRestaurant.lng.toFixed(5)}
           </small>
-        </dialog>
+        </div>
       )}
     </div>
   );
